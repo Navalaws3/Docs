@@ -32,8 +32,11 @@ kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceac
 ## Copy admin.conf file from Kubernetes master to Jenkins user's home directory in Jenkins server
 
 ```sh
+
 mkdir /var/lib/jenkins/.kube
 Manually copy /etc/kubernetes/admin.conf file to /var/lib/jenkins/.kube/config file
+
+config content kuth milel? aapn gke cluster la jevha connect krto tevha run keleya location la .kube dir create hote automatically. aata tyatun config file aapan su -jenkins karun mkdir .kube --> vi config --> paste taht content here
 
 chown -R jenkins:jenkins /home/jenkins/.kube
 ```

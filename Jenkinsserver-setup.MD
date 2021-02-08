@@ -39,5 +39,5 @@ change shell from /bin/false to /bin/bash
 ## give sudo access to the jenkins user account why because, we will be using helm so helm needs suso access
 ```sh
    vi /etc/sudoers
-   add jenkins ALL=(ALL) ALL NOPASSWD: ALL
+   add jenkins ALL=(ALL) NOPASSWD: ALL
 ```
